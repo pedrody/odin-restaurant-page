@@ -1,3 +1,10 @@
 import "./styles.css";
+import { home } from "./home.js";
 
-console.log("Hello world!");
+const homeBtn = document.getElementById("home-btn");
+
+homeBtn.addEventListener("click", () => {
+    home();
+});
+
+home();

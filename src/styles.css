@@ -4,11 +4,16 @@
     padding: 0;
 }
 
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 nav {
     display: flex;
     justify-content: center;
     gap: 30px;
-    padding: 10px;
 }
 
 nav button {
@@ -16,10 +21,56 @@ nav button {
     font-size: 20px;
     background-color: white;
     padding-bottom: 8px;
+    border-bottom: 2px solid transparent;
 }
 
 nav button:hover {
     cursor: pointer;
     color: #a15d32;
-    border-bottom: 2px solid #a15d32;
+    border-bottom-color: #a15d32;
+}
+
+header {
+    padding: 10px;
+    margin: 10px;
+}
+
+#content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home-container {
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    gap: 60px;
+    width: 60%;
+
+}
+
+#home-container h1 {
+    font-size: 4rem;
+    color: #a15d32;
+}
+
+#home-container p {
+    font-size: 0.8rem;
+    color: #4b4343;
+}
+
+.home-image {
+    height: 400px;    
+    width: 300px;
+    border-radius: 8px;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    max-width: 500px;
 }
