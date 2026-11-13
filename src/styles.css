@@ -74,3 +74,68 @@ header {
     padding: 2rem;
     max-width: 500px;
 }
+
+#menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px
+}
+
+#menu-container button {
+    background-color: #a15d32;
+    color: #ffffff;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0px 3px 10px 4px rgba(31, 31, 31, 0.08);
+}
+
+#menu-container button:hover {
+    cursor: pointer;
+    background-color:#8e512b;
+}
+
+#menu-container h1 {
+    color: #a15d32;
+}
+
+.menu-grid  {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 600px;
+    height: 400px;
+    border: 1px solid #a15d32;
+    border-width: 1px 0 0 1px;
+    box-shadow: 0px 3px 10px 4px rgba(31, 31, 31, 0.08);
+}
+
+.menu-grid div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid #a15d32;
+    border-width: 0 1px 1px 0;
+    color: #ffffff;
+}
+
+.menu-grid div > p {
+    background-color: #ffffff;
+    color: #a15d32;
+    padding: 8px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.menu-grid div:hover > p {
+    display: none;
+}
+
+.menu-grid div:hover {
+    cursor: pointer;
+}
