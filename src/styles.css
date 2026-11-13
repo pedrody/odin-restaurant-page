@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Norsebold';
+    src: url('./Norsebold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -40,6 +47,8 @@ header {
 
 header h1 {
     color: #a15d32;
+    font-family: "Norsebold";
+    font-size: 3rem;
 }
 
 .order-now-header-btn {
@@ -74,12 +83,12 @@ header h1 {
 }
 
 #home-container h1 {
-    font-size: 4rem;
+    font-size: 5rem;
     color: #a15d32;
+    font-family: "Norsebold";
 }
 
 #home-container p {
-    font-size: 0.8rem;
     color: #4b4343;
 }
 
