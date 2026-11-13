@@ -44,7 +44,7 @@ header {
 
 #home-container {
     display: flex;
-    align-items: center;    
+    align-items: center;
     justify-content: center;
     gap: 60px;
     width: 60%;
@@ -62,7 +62,7 @@ header {
 }
 
 .home-image {
-    height: 400px;    
+    height: 400px;
     width: 300px;
     border-radius: 8px;
 }
@@ -94,14 +94,14 @@ header {
 
 #menu-container button:hover {
     cursor: pointer;
-    background-color:#8e512b;
+    background-color: #8e512b;
 }
 
 #menu-container h1 {
     color: #a15d32;
 }
 
-.menu-grid  {
+.menu-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -124,7 +124,7 @@ header {
     color: #ffffff;
 }
 
-.menu-grid div > p {
+.menu-grid div>p {
     background-color: #ffffff;
     color: #a15d32;
     padding: 8px 30px;
@@ -132,10 +132,44 @@ header {
     font-weight: bold;
 }
 
-.menu-grid div:hover > p {
+.menu-grid div:hover>p {
     display: none;
 }
 
 .menu-grid div:hover {
     cursor: pointer;
+}
+
+#about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 500px;
+    padding: 10px;
+}
+
+#about-container>p {
+    text-align: center;
+}
+
+
+.about-card {
+    background-color: #fff;
+    padding: 30px;
+    width: 500px;
+    border-radius: 8px;
+    box-shadow: 0px 3px 10px 4px rgba(31, 31, 31, 0.08);
+    text-align: center;
+}
+
+#about-container h1,
+#about-container h2 {
+    color: #a15d32;
+}
+
+.contact-card p {
+    color: #4b4343;
+    margin: 4px 0;
+    font-size: 16px;
 }
